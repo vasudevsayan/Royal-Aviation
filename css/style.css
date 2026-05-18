@@ -1,0 +1,2081 @@
+/* =========================
+   GLOBAL CSS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR + BANNER
+========================= */
+
+.aviation-banner {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../assets/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.aviation-navbar {
+  padding: 18px 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.brand-logo {
+  width: 95px;
+}
+
+.navbar-nav {
+  gap: 34px;
+}
+
+/* NAV LINK */
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 0 !important;
+  display: inline-block;
+}
+
+/* GOLD COLOR */
+
+.nav-link:hover,
+.nav-link.active {
+  color: #c8a45d !important;
+}
+
+/* LEFT BOTTOM CORNER */
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-left: 1.5px solid #c8a45d;
+  border-bottom: 1.5px solid #c8a45d;
+  left: -8px;
+  bottom: -4px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* RIGHT TOP CORNER */
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-right: 1.5px solid #c8a45d;
+  border-top: 1.5px solid #c8a45d;
+  right: -8px;
+  top: -4px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* SHOW EFFECT */
+
+.nav-link:hover::after,
+.nav-link:hover::before,
+.nav-link.active::after,
+.nav-link.active::before {
+  opacity: 1;
+}
+
+.nav-icons {
+  gap: 12px;
+}
+
+.icon-box {
+  text-decoration: none;
+}
+
+/* =========================
+   CUSTOM TOGGLER
+========================= */
+
+.aviation-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* LINES */
+
+.toggle-line {
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transition: 0.4s ease;
+  display: block;
+}
+
+.aviation-toggler.active .top-line {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.aviation-toggler.active .middle-line {
+  opacity: 0;
+}
+
+.aviation-toggler.active .bottom-line {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================
+   BANNER CONTENT
+========================= */
+
+.aviation-banner-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 950px;
+}
+
+/* HEADING */
+
+.aviation-banner-content h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 95px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 24px;
+  max-width: 950px;
+}
+
+.aviation-banner-content h1 .first-line {
+  white-space: nowrap;
+}
+
+.aviation-banner-content p {
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 30px;
+  max-width: 560px;
+  margin-bottom: 34px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.flight-btn {
+  width: fit-content;
+  padding: 16px 34px;
+  border: 1px solid #c8a45d;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BUTTON IMAGE */
+
+.flight-btn img {
+  width: 20px;
+}
+
+.flight-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* =========================
+   PERFECT DAY SECTION
+========================= */
+
+.perfect-day-section {
+  padding: 110px 0;
+  background: #000;
+}
+
+/* =========================
+   SECTION DIVIDER
+========================= */
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+/* PNG LINE */
+
+.divider-line {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  object-fit: contain;
+}
+
+/* CENTER TAG */
+
+.section-divider span {
+  padding: 10px 34px;
+  border: 1px solid rgba(200, 164, 93, 0.4);
+  border-radius: 14px;
+  background: #080806;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* HEADING */
+
+.perfect-day-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.perfect-day-heading h2 {
+  color: #fff;
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  max-width: 760px;
+  margin: auto;
+}
+
+/* GOLD TEXT */
+
+.perfect-day-heading h2 span {
+  color: #c8a45d;
+}
+
+/* VIDEO IMAGE BOX */
+
+.aviation-video-box {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.aviation-video-box img {
+  width: 100%;
+  display: block;
+}
+
+/* PLAY BUTTON */
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.play-btn:hover svg {
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.45));
+}
+
+/* SVG */
+
+.play-btn svg {
+  transition: 0.4s ease;
+}
+
+/* =========================
+   PRIVATE JETS SECTION
+========================= */
+
+.private-jets-section {
+  padding: 120px 0;
+  background: #000;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.private-jets-heading {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.private-jets-heading h2 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+
+  margin-bottom: 18px;
+}
+
+/* GOLD TEXT */
+
+.private-jets-heading h2 span {
+  color: #c8a45d;
+}
+
+.private-jets-heading p {
+  color: #bdbdbd;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 450px;
+  margin: auto;
+}
+
+/* =========================
+   JETS GRID
+========================= */
+
+.private-jets-section .row {
+  row-gap: 38px !important;
+}
+
+/* =========================
+   CARD COLUMN SIZE
+========================= */
+
+.private-jets-section .col-xl-4 {
+  width: 33.3333%;
+  max-width: 340px;
+}
+
+/* =========================
+   JET CARD
+========================= */
+
+.jet-card {
+  background: #070707;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.4s ease;
+  width: 100%;
+}
+
+.jet-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(200, 164, 93, 0.5);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.jet-image {
+  overflow: hidden;
+}
+
+.jet-image img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.jet-card:hover .jet-image img {
+  transform: scale(1.08);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.jet-content {
+  padding: 18px 18px 22px;
+  text-align: center;
+}
+
+/* TITLE */
+
+.jet-content h3 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 4px;
+}
+
+/* TEXT */
+
+.jet-content p {
+  color: #bcbcbc;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.jet-book-btn {
+  width: fit-content;
+  margin: auto;
+  padding: 8px 18px;
+  border: 1px solid #4e4327;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.4s ease;
+  font-size: 12px;
+}
+
+.jet-book-btn img {
+  width: 14px;
+}
+
+.jet-book-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* =========================
+   EXPLORE BUTTON
+========================= */
+
+.explore-btn-box {
+  text-align: center;
+
+  margin-top: 70px;
+}
+
+.explore-btn {
+  width: fit-content;
+  margin: auto;
+  padding: 15px 34px;
+  border: 1px solid #4e4327;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.4s ease;
+}
+
+.explore-btn img {
+  width: 20px;
+}
+
+.explore-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* =========================
+   CHARTER SERVICES SECTION
+========================= */
+
+.charter-services-section {
+  padding: 120px 0;
+  background: #000;
+}
+
+/* HEADING */
+
+.charter-services-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.charter-services-heading h2 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 18px;
+}
+
+.charter-services-heading h2 span {
+  color: #c8a45d;
+}
+
+.charter-services-heading p {
+  color: #bdbdbd;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+  position: relative;
+  background: #060606;
+  border: 1px solid rgba(200, 164, 93, 0.15);
+  border-radius: 34px;
+  padding: 55px 55px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  transition: 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(200, 164, 93, 0.45);
+
+  transform: translateY(-6px);
+}
+
+/* TOP GLOW */
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  width: 85px;
+  height: 3px;
+  background: #e7d46b;
+  border-radius: 20px;
+  box-shadow: 0 0 18px #e7d46b;
+}
+
+/* CONTENT AREA */
+
+.service-content {
+  max-width: 420px;
+}
+
+/* SMALL TAG */
+
+.service-small-tag {
+  width: fit-content;
+  padding: 7px 18px;
+  border: 1px solid #4e4327;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+/* TITLE */
+
+.service-content h3 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 54px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 20px;
+}
+
+.service-content h3 span {
+  color: #c8a45d;
+}
+
+/* TEXT */
+
+.service-content p {
+  color: #bdbdbd;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+/* BUTTON */
+
+.service-btn {
+  width: fit-content;
+  padding: 14px 28px;
+  border: 1px solid #4e4327;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+
+.service-btn img {
+  width: 18px;
+}
+
+.service-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* IMAGE */
+
+.service-image {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   SPECIAL OFFER SECTION
+========================= */
+
+.special-offer-section {
+  padding: 120px 0;
+  background: #000;
+}
+
+/* TAG */
+
+.offer-tag {
+  width: fit-content;
+  margin: 0 auto 35px;
+  padding: 10px 26px;
+  border: 1px solid #4e4327;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* HEADING */
+
+.special-offer-heading {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.special-offer-heading h2 {
+  color: #fff;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  max-width: 950px;
+  margin: auto;
+}
+
+.special-offer-heading h2 span {
+  color: #c8a45d;
+}
+
+/* OFFER TABLE */
+
+.offer-table {
+  max-width: 1220px;
+  margin: auto;
+}
+
+/* TABLE HEADINGS */
+
+.offer-table-heading {
+  display: grid;
+  grid-template-columns:
+    1.2fr
+    1.2fr
+    1.5fr
+    1fr
+    0.9fr
+    1.4fr;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.offer-table-heading div {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* =========================
+   OFFER ROW
+========================= */
+
+.offer-row {
+  display: grid;
+  grid-template-columns:
+    1.2fr
+    1.2fr
+    1.5fr
+    1fr
+    0.9fr
+    1.4fr;
+
+  align-items: center;
+  padding: 12px 22px;
+  border: 1px solid rgba(200, 164, 93, 0.22);
+  border-radius: 60px;
+  background: #080806;
+  margin-bottom: 18px;
+  transition: 0.4s ease;
+}
+
+.offer-row:hover {
+  border-color: rgba(200, 164, 93, 0.5);
+  transform: translateY(-4px);
+}
+
+/* TEXT */
+
+.offer-row div {
+  color: #d7d7d7;
+  font-size: 15px;
+}
+
+/* BUTTON */
+
+.offer-book-btn {
+  width: fit-content;
+  margin-left: auto;
+  padding: 10px 22px;
+  border: 1px solid #4e4327;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease;
+  font-size: 14px;
+}
+
+.offer-book-btn img {
+  width: 18px;
+}
+
+.offer-book-btn:hover {
+  background: #c8a45d;
+
+  color: #000;
+}
+
+/* EXPLORE BUTTON */
+
+.offer-explore-btn-box {
+  text-align: center;
+
+  margin-top: 55px;
+}
+
+/* =========================
+   OUR TEAM SECTION
+========================= */
+
+.our-team-section {
+  padding: 120px 0;
+  background: #000;
+  position: relative;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.our-team-heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.our-team-heading h2 {
+  color: #fff;
+
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+
+  font-family: "Arlita", serif;
+
+  max-width: 700px;
+
+  margin: auto;
+}
+
+.our-team-heading h2 span {
+  color: #c8a45d;
+
+  display: block;
+}
+
+/* =========================
+   TEAM CARD
+========================= */
+
+.team-card {
+  background: #050505;
+  border: 1px solid rgba(200, 164, 93, 0.25);
+  border-radius: 0 0 45px 45px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  min-height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(200, 164, 93, 0.6);
+}
+
+/* TOP CURVE */
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(200, 164, 93, 0.25);
+  border-top: none;
+  border-radius: 0 0 220px 220px;
+}
+
+/* IMAGE */
+
+.team-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.team-image img {
+  width: 100%;
+  max-width: 280px;
+
+  display: block;
+}
+
+/* CONTENT */
+
+.team-content {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.team-content h3 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 8px;
+}
+
+.team-content p {
+  color: #d4d4d4;
+  font-size: 18px;
+  line-height: 28px;
+
+  margin-bottom: 18px;
+}
+
+/* DESIGN */
+.team-design img {
+  width: 140px;
+
+  margin: auto;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.team-btn-box {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.team-btn {
+  width: fit-content;
+  margin: auto;
+  padding: 14px 32px;
+  border: 1px solid #4e4327;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+
+.team-btn img {
+  width: 18px;
+}
+
+.team-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* =========================
+   TESTIMONIAL SECTION
+========================= */
+
+.testimonial-section {
+  padding: 120px 0;
+  background: #000;
+}
+
+/* TOP TAG */
+
+.testimonial-top-tag {
+  width: fit-content;
+  margin: 0 auto -18px;
+  padding: 8px 24px;
+  border: 1px solid rgba(200, 164, 93, 0.4);
+  border-radius: 14px;
+  background: #080806;
+
+  color: #fff;
+
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+/* WRAPPER */
+
+.testimonial-wrapper {
+  border: 1px solid rgba(200, 164, 93, 0.35);
+  border-radius: 30px;
+  padding: 55px;
+  background: #050505;
+}
+
+/* MAIN IMAGE */
+
+.testimonial-main-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* SMALL TAG */
+
+.testimonial-small-tag {
+  width: fit-content;
+  padding: 7px 18px;
+  border: 1px solid rgba(200, 164, 93, 0.4);
+
+  border-radius: 40px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+/* HEADING */
+
+.testimonial-heading h2 {
+  color: #fff;
+  font-size: 54px;
+  line-height: 64px;
+  font-family: "Arlita", serif;
+  margin-bottom: 35px;
+}
+
+.testimonial-heading h2 span {
+  color: #c8a45d;
+}
+
+/* TOP REVIEW CARD */
+
+.top-review-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid rgba(200, 164, 93, 0.3);
+
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+
+  background: #080806;
+}
+
+.top-review-left img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.top-review-content h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.top-review-content p {
+  color: #cfcfcf;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.review-star {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.review-star img {
+  width: 34px;
+  filter: drop-shadow(0 0 8px #ffe56a) drop-shadow(0 0 18px #ffe56a)
+    drop-shadow(0 0 28px #ffe56a);
+}
+/* GRID */
+
+.testimonial-grid {
+  margin-top: 45px;
+}
+
+/* CARD */
+
+.testimonial-card {
+  position: relative;
+  background: #080806;
+  border: 1px solid rgba(200, 164, 93, 0.15);
+  border-radius: 16px;
+  padding: 34px;
+  height: 100%;
+}
+
+/* GLOW LINE */
+
+.testimonial-line {
+  width: 70px;
+  height: 4px;
+
+  background: #e7d46b;
+  border-radius: 20px;
+  box-shadow: 0 0 18px #e7d46b;
+  margin-bottom: 24px;
+}
+
+/* TEXT */
+
+.testimonial-card p {
+  color: #d4d4d4;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+/* USER */
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.testimonial-user img {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-user h5 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.testimonial-user span {
+  color: #b5b5b5;
+  font-size: 13px;
+}
+
+/* BUTTON */
+
+.testimonial-btn-box {
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.testimonial-btn {
+  width: fit-content;
+  margin: auto;
+  padding: 14px 30px;
+  border: 1px solid #4e4327;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+
+.testimonial-btn img {
+  width: 18px;
+}
+
+.testimonial-btn:hover {
+  background: #c8a45d;
+
+  color: #000;
+}
+
+/* =========================
+   AVIATION CLUB SECTION
+========================= */
+
+.aviation-club-section {
+  padding: 120px 0;
+  background: #000;
+}
+
+/* =========================
+   IMAGE GALLERY
+========================= */
+
+.club-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-left,
+.gallery-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-left {
+  width: 42%;
+}
+
+.gallery-right {
+  width: 58%;
+}
+
+.club-gallery img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CUSTOM SHAPES */
+
+.gallery-left img:nth-child(1) {
+  height: 300px;
+  border-radius: 90px 90px 30px 30px;
+}
+
+.gallery-left img:nth-child(2) {
+  height: 430px;
+  border-radius: 40px;
+}
+
+.gallery-left img:nth-child(3) {
+  height: 230px;
+  border-radius: 40px 40px 90px 90px;
+}
+
+.gallery-right img:nth-child(1) {
+  height: 350px;
+  border-radius: 40px;
+  margin-top: 170px;
+}
+
+.gallery-right img:nth-child(2) {
+  height: 310px;
+  border-radius: 40px 40px 90px 40px;
+}
+
+/* =========================
+   TAG
+========================= */
+
+.club-tag {
+  width: fit-content;
+  padding: 8px 20px;
+  border: 1px solid rgba(200, 164, 93, 0.4);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.club-heading {
+  margin-bottom: 45px;
+}
+
+.club-heading h2 {
+  color: #fff;
+  font-size: 90px;
+  line-height: 1;
+  font-family: "Arlita", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.club-heading h2 span {
+  color: #e2c15d;
+}
+
+.club-heading p {
+  color: #d2d2d2;
+  font-size: 20px;
+  line-height: 34px;
+  max-width: 480px;
+}
+
+/* =========================
+   FORM BOX
+========================= */
+
+.club-form-box {
+  background: #080806;
+  border: 2px solid #27220d;
+  border-radius: 40px;
+  padding: 50px;
+  position: relative;
+}
+
+/* TOP DESIGN */
+
+.club-form-design {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.club-form-design img {
+  width: 150px;
+}
+
+/* TITLE */
+
+.club-form-box h3 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 54px;
+  font-family: "Arlita", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.club-form-box h3 span {
+  color: #e2c15d;
+  display: block;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #3a3216;
+  border-radius: 12px;
+  padding: 0 20px;
+  color: #fff;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #7f7f7f;
+}
+
+/* BUTTON */
+
+.club-btn {
+  width: fit-content;
+  padding: 15px 32px;
+  border: 1px solid #4e4327;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto 0;
+  transition: 0.4s ease;
+}
+
+.club-btn img {
+  width: 18px;
+}
+
+.club-btn:hover {
+  background: #c8a45d;
+  color: #000;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.aviation-footer {
+  padding: 90px 0 35px;
+  background: #000;
+  border-top: 1px solid rgba(200, 164, 93, 0.2);
+}
+
+/* LOGO */
+
+.footer-logo img {
+  width: 110px;
+  margin-bottom: 28px;
+}
+
+/* TEXT */
+
+.footer-text {
+  color: #d0d0d0;
+  font-size: 17px;
+  line-height: 32px;
+  max-width: 380px;
+  margin-bottom: 35px;
+}
+
+/* PHONE */
+
+.footer-phone {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.footer-phone i {
+  color: #d4b45c;
+}
+
+.footer-phone:hover {
+  color: #d4b45c;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 22px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #d4b45c;
+}
+
+/* =========================
+   RIGHT
+========================= */
+
+.footer-update-title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 28px;
+}
+
+/* FORM */
+
+.footer-form {
+  border: 1px solid rgba(212, 180, 92, 0.4);
+  border-radius: 50px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 0 18px;
+  font-size: 16px;
+}
+
+.footer-form input::placeholder {
+  color: #8f8f8f;
+}
+
+.footer-form button {
+  background: #d4b45c;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.footer-form button:hover {
+  background: #fff;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.footer-social a img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: translateY(-4px);
+}
+
+/* LOCATION */
+
+.footer-location {
+  color: #fff;
+  font-size: 22px;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  margin-top: 70px;
+
+  padding-top: 28px;
+
+  border-top: 1px solid rgba(200, 164, 93, 0.25);
+}
+
+.footer-bottom p {
+  color: #d0d0d0;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .private-jets-section .col-xl-4 {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* navbar */
+  .navbar-nav {
+    padding: 30px 0;
+    gap: 10px;
+  }
+
+  .nav-icons {
+    padding-bottom: 20px;
+  }
+
+  .aviation-banner-content h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .aviation-navbar {
+    position: relative;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(30, 30, 30, 0.75);
+
+    backdrop-filter: blur(14px);
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    z-index: 999;
+  }
+
+  .navbar-nav {
+    gap: 40px;
+  }
+
+  .nav-link {
+    font-size: 32px;
+  }
+
+  .nav-icons {
+    justify-content: center;
+
+    margin-top: 50px;
+
+    gap: 25px;
+  }
+
+  .icon-box svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* private jet */
+
+  .private-jets-heading h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  .private-jets-section .col-xl-4 {
+    max-width: 100%;
+    width: 50%;
+  }
+
+  .charter-services-heading h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  .service-card {
+    padding: 40px;
+  }
+
+  .service-content h3 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .service-image {
+    margin-top: 40px;
+  }
+
+  .special-offer-heading h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  .offer-table {
+    overflow-x: auto;
+  }
+
+  .offer-table-inner {
+    min-width: 1050px;
+  }
+
+  .our-team-heading h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+
+  .team-card {
+    min-height: auto;
+
+    padding-bottom: 25px;
+  }
+
+  .testimonial-wrapper {
+    padding: 35px;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .club-heading h2 {
+    font-size: 70px;
+  }
+
+  .club-form-box {
+    padding: 35px;
+  }
+
+  .club-form-box h3 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .footer-links-wrapper {
+    justify-content: flex-start;
+  }
+
+  .footer-update-title {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aviation-banner-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .aviation-banner-content h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .aviation-banner-content p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  /* private jet */
+
+  .private-jets-section {
+    padding: 80px 0;
+  }
+  .private-jets-heading {
+    margin-bottom: 45px;
+  }
+  .private-jets-heading h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  .private-jets-heading p {
+    font-size: 15px;
+  }
+  .private-jets-section .col-xl-4 {
+    width: 100%;
+  }
+  .jet-image img {
+    height: auto;
+  }
+
+  .charter-services-section {
+    padding: 80px 0;
+  }
+
+  .charter-services-heading {
+    margin-bottom: 45px;
+  }
+
+  .charter-services-heading h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .service-card {
+    padding: 30px 25px;
+
+    border-radius: 24px;
+  }
+
+  .service-content h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .service-content p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .special-offer-section {
+    padding: 80px 0;
+  }
+
+  .special-offer-heading h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  .divider-left,
+  .divider-right {
+    max-width: 120px;
+  }
+
+  .section-divider span {
+    padding: 8px 20px;
+
+    font-size: 12px;
+  }
+
+  .our-team-section {
+    padding: 80px 0;
+  }
+
+  .our-team-heading h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .team-card {
+    max-width: 360px;
+    margin: auto;
+  }
+
+  .team-image img {
+    max-width: 220px;
+  }
+
+  .team-content h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .testimonial-section {
+    padding: 80px 0;
+  }
+
+  .testimonial-wrapper {
+    padding: 25px;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .top-review-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-star {
+    right: 10px;
+  }
+
+  .aviation-club-section {
+    padding: 80px 0;
+  }
+
+  .club-gallery {
+    gap: 12px;
+  }
+
+  .gallery-left,
+  .gallery-right {
+    gap: 12px;
+  }
+
+  .gallery-left img:nth-child(1) {
+    height: 180px;
+  }
+
+  .gallery-left img:nth-child(2) {
+    height: 260px;
+  }
+
+  .gallery-left img:nth-child(3) {
+    height: 160px;
+  }
+
+  .gallery-right img:nth-child(1) {
+    height: 220px;
+    margin-top: 100px;
+  }
+
+  .gallery-right img:nth-child(2) {
+    height: 200px;
+  }
+
+  .club-heading h2 {
+    font-size: 54px;
+  }
+
+  .club-heading p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .club-form-box {
+    padding: 25px;
+    border-radius: 28px;
+  }
+
+  .club-form-box h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .form-group input {
+    height: 54px;
+  }
+
+  .aviation-footer {
+    padding: 70px 0 30px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+
+    line-height: 28px;
+  }
+
+  .footer-phone {
+    font-size: 18px;
+  }
+
+  .footer-links-wrapper {
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+
+  .footer-update-title {
+    font-size: 22px;
+  }
+
+  .footer-location {
+    font-size: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aviation-banner-content h1 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .flight-btn {
+    padding: 14px 28px;
+  }
+
+  /* private jet */
+
+  .private-jets-heading h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .jet-content h3 {
+    font-size: 20px;
+  }
+  .explore-btn {
+    padding: 13px 24px;
+  }
+
+  .charter-services-heading h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .service-content h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .service-btn {
+    padding: 12px 22px;
+  }
+  .special-offer-heading h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .section-divider {
+    gap: 10px;
+  }
+
+  .section-divider span {
+    padding: 8px 18px;
+
+    font-size: 12px;
+  }
+
+  .our-team-heading h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .team-image img {
+    max-width: 190px;
+  }
+
+  .team-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .team-content p {
+    font-size: 14px;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+  }
+
+  .testimonial-card p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .club-heading h2 {
+    font-size: 44px;
+  }
+
+  .club-form-box h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .club-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-form {
+    flex-direction: column;
+
+    gap: 14px;
+
+    border-radius: 24px;
+  }
+
+  .footer-form input {
+    padding: 14px;
+  }
+
+  .footer-form button {
+    width: 100%;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-location {
+    text-align: center;
+
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}

@@ -1,0 +1,442 @@
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.aviation-banner-section {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../assets/services-banner.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aviation-banner-content {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1050px;
+}
+
+/* HEADING */
+
+.aviation-banner-content h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 95px;
+  font-weight: 400;
+  font-family: "Arlita", serif;
+  margin-bottom: 30px;
+}
+
+/* TEXT */
+
+.aviation-banner-content p {
+  color: #d7d7d7;
+  font-size: 17px;
+  line-height: 32px;
+  max-width: 620px;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.services-book-btn {
+  width: fit-content;
+  padding: 16px 34px;
+  border: 1px solid #c8a45d;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s ease;
+}
+
+.services-book-btn img {
+  width: 20px;
+}
+
+.services-book-btn:hover {
+  background: #c8a45d;
+
+  color: #000;
+}
+
+/* =========================
+   ALTERNATIVE SECTION
+========================= */
+
+.alternative-section {
+  padding: 120px 0;
+
+  background: #020202;
+}
+
+/* HEADING */
+
+.alternative-heading {
+  max-width: 850px;
+
+  margin: 0 auto 70px;
+}
+
+.alternative-heading h2 {
+  color: #fff;
+  font-size: 58px;
+  line-height: 68px;
+  font-family: "Arlita", serif;
+  margin-bottom: 25px;
+}
+
+.alternative-heading h2 span {
+  color: #d6b25e;
+}
+
+.alternative-heading p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 28px;
+  max-width: 720px;
+  margin: auto;
+}
+
+/* CARD */
+
+.alternative-card {
+  position: relative;
+  padding: 50px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(214, 178, 94, 0.2);
+  border-radius: 32px;
+  background: rgba(10, 10, 10, 0.95);
+  overflow: hidden;
+}
+
+/* GLOW LINE */
+
+.alternative-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 80px;
+  height: 3px;
+  background: #d6b25e;
+  box-shadow: 0 0 20px #d6b25e;
+}
+
+/* CONTENT */
+
+.alternative-content h3 {
+  color: #fff;
+  font-size: 42px;
+  line-height: 52px;
+  margin-bottom: 25px;
+  font-family: "Arlita", serif;
+}
+
+.alternative-content h3 span {
+  color: #d6b25e;
+}
+
+.alternative-content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+/* IMAGE */
+
+.alternative-image {
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.alternative-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+   MEMBERSHIP SECTION
+========================= */
+
+.membership-section {
+  padding: 120px 0;
+  background: #020202;
+}
+
+/* HEADING */
+
+.membership-heading {
+  max-width: 850px;
+
+  margin: 0 auto 70px;
+}
+
+.membership-heading h2 {
+  color: #fff;
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  font-family: "Arlita", serif;
+}
+
+.membership-heading h2 span {
+  display: block;
+  color: #d6b25e;
+}
+
+.membership-heading p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 28px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* TABLE */
+
+.membership-table {
+  margin-top: 50px;
+}
+
+/* ROW */
+
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 30px;
+  border: 1px solid rgba(214, 178, 94, 0.2);
+  border-radius: 60px;
+  margin-bottom: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HEAD ROW */
+
+.table-head {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.table-head::before {
+  display: none;
+}
+
+.table-head .table-col {
+  color: #d6b25e;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* COLUMNS */
+
+.table-col {
+  flex: 1;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.feature-col {
+  flex: 2;
+  text-align: left;
+}
+
+/* CHECK ICON */
+
+.check-icon {
+  width: 22px;
+  object-fit: contain;
+}
+
+/* NOTE */
+
+.membership-note {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .aviation-banner-content h1 {
+    font-size: 68px;
+    line-height: 78px;
+  }
+}
+
+@media (max-width: 991px) {
+  .aviation-banner-content {
+    text-align: center;
+
+    align-items: center;
+  }
+
+  .aviation-banner-content h1 {
+    font-size: 56px;
+
+    line-height: 66px;
+  }
+
+  .alternative-card {
+    padding: 35px;
+  }
+
+  .alternative-content {
+    margin-bottom: 30px;
+
+    text-align: center !important;
+  }
+
+  .alternative-heading h2 {
+    font-size: 42px;
+
+    line-height: 52px;
+  }
+
+  .membership-heading h2 {
+    font-size: 42px;
+
+    line-height: 52px;
+  }
+
+  .table-row {
+    padding: 22px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aviation-banner-content {
+    padding: 100px 0;
+  }
+
+  .aviation-banner-content h1 {
+    font-size: 44px;
+
+    line-height: 56px;
+  }
+
+  .aviation-banner-content p {
+    font-size: 15px;
+
+    line-height: 28px;
+  }
+
+  .alternative-section {
+    padding: 80px 0;
+  }
+
+  .alternative-card {
+    padding: 25px;
+
+    border-radius: 24px;
+  }
+
+  .alternative-heading h2 {
+    font-size: 34px;
+
+    line-height: 44px;
+  }
+
+  .alternative-content h3 {
+    font-size: 30px;
+
+    line-height: 40px;
+  }
+
+  .alternative-image img {
+    height: 240px;
+  }
+
+  .membership-section {
+    padding: 80px 0;
+  }
+
+  .membership-heading h2 {
+    font-size: 34px;
+
+    line-height: 44px;
+  }
+
+  .membership-heading p {
+    font-size: 14px;
+  }
+
+  .membership-table {
+    overflow-x: auto;
+  }
+
+  .table-row {
+    min-width: 750px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .aviation-banner-content h1 {
+    font-size: 34px;
+
+    line-height: 46px;
+  }
+
+  .services-book-btn {
+    padding: 14px 28px;
+  }
+
+  .alternative-heading h2 {
+    font-size: 28px;
+
+    line-height: 38px;
+  }
+
+  .alternative-content h3 {
+    font-size: 24px;
+
+    line-height: 34px;
+  }
+
+  .alternative-content p {
+    font-size: 13px;
+
+    line-height: 24px;
+  }
+
+  .alternative-btn {
+    width: 100%;
+  }
+
+  .alternative-image img {
+    height: 220px;
+  }
+
+  .membership-heading h2 {
+    font-size: 28px;
+
+    line-height: 38px;
+  }
+
+  .table-row {
+    padding: 20px;
+  }
+}

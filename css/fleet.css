@@ -1,0 +1,382 @@
+/* SECTION */
+
+.fleet-section {
+  background: #000;
+  padding: 20px 0 100px;
+  position: relative;
+    overflow: hidden;
+}
+
+.fleet-section::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(
+    circle,
+    rgba(214, 178, 94, 0.12) 0%,
+    transparent 70%
+  );
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* HEADING */
+
+.fleet-heading {
+  max-width: 850px;
+  margin: auto;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.fleet-heading h1 {
+  color: #fff;
+  font-size: 78px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.fleet-heading h1 span {
+  color: #d6b25e;
+}
+
+.fleet-heading p {
+  color: #cfcfcf;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.fleet-heading small {
+  color: #8f8f8f;
+  font-family: sans-serif;
+}
+
+/* CARD */
+
+.fleet-card {
+  background: #060606;
+  border: 1px solid rgba(214, 178, 94, 0.2);
+  border-radius: 30px;
+  padding: 45px;
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fleet-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 120px;
+  height: 3px;
+  background: #d6b25e;
+}
+
+.reverse-card::before {
+  left: auto;
+  right: 50px;
+}
+
+.fleet-content h3 {
+  color: #d6b25e;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.fleet-content p {
+  color: #d2d2d2;
+  font-size: 14px;
+  line-height: 1.9;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.fleet-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid #d6b25e;
+  border-radius: 50px;
+  color: #d6b25e;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.fleet-btn:hover {
+  background: #d6b25e;
+  color: #000;
+}
+
+.fleet-btn img {
+  width: 16px;
+}
+
+.fleet-image img {
+  width: 100%;
+  border-radius: 22px;
+  height: 320px;
+  object-fit: cover;
+}
+/* =========================
+   TOP LINE DESIGN
+========================= */
+
+.faq-top-line {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+/* PNG DESIGN */
+
+.top-line-design {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+
+/* TEXT */
+
+.faq-top-line p {
+  position: relative;
+  z-index: 5;
+  margin: 0;
+  color: #d6b25e;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Clash Grotesk", sans-serif;
+  background: transparent;
+  padding: 0;
+}
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.faq-box {
+  max-width: 920px;
+  margin: auto;
+  background: #080806;
+  border: 1px solid rgba(214, 178, 94, 0.18);
+  border-radius: 60px;
+  padding: 70px 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   TOP DESIGN
+========================= */
+
+
+.faq-heading-design {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.faq-heading-design img {
+  width: 165px;
+  object-fit: contain;
+}
+
+/* =========================
+   TAG BUTTON
+========================= */
+
+.faq-tag {
+  display: block;
+  margin: auto;
+  margin-bottom: 28px;
+  padding: 12px 42px;
+  background: transparent;
+  border: 1px solid rgba(214, 178, 94, 0.45);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Clash Grotesk", sans-serif;
+  transition: 0.3s ease;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.faq-box h2 {
+  text-align: center;
+  font-family: "Arlita", serif;
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 55px;
+}
+
+.faq-box h2 span {
+  display: block;
+  color: #d6b25e;
+  margin-top: 10px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.custom-accordion .accordion-item {
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px !important;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+  background: #151515;
+  color: #fff;
+  box-shadow: none;
+  padding: 22px 25px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: #151515;
+  color: #d6b25e;
+}
+
+.custom-accordion .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.custom-accordion .accordion-body {
+  background: #151515;
+  color: #bfbfbf;
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: sans-serif;
+  padding: 0 25px 22px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .fleet-heading h1 {
+    font-size: 52px;
+  }
+
+  .fleet-content {
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+
+  .fleet-card {
+    padding: 30px;
+  }
+
+  .fleet-image img {
+    height: auto;
+  }
+
+  .faq-box {
+    border-radius: 40px;
+    padding: 50px 25px;
+  }
+
+  .faq-box h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fleet-heading h1 {
+    font-size: 40px;
+  }
+
+  .fleet-heading p {
+    font-size: 14px;
+  }
+
+  .fleet-content h3 {
+    font-size: 34px;
+  }
+
+  .fleet-card {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .fleet-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+
+.faq-top-line {
+  height: 70px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .faq-top-line {
+    height: 95px;
+    margin-bottom: 35px;
+  }
+
+  .top-line-design {
+    width: 140%;
+    height: 95px;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .faq-top-line p {
+    font-size: 6px;
+    letter-spacing: 0.6px;
+    width: 78%;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+}
+   .faq-heading-design img {
+    width: 120px;
+  }
+
+  .faq-tag {
+    font-size: 13px;
+    padding: 10px 28px;
+    margin-bottom: 22px;
+  }
+
+  .faq-box h2 {
+    font-size: 46px;
+    line-height: 1.05;
+    margin-bottom: 35px;
+  }

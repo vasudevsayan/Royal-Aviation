@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Royal Aviation</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/fleet.css" />
+  </head>
+
+  <body>
+    <section class="fleet-section">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg aviation-navbar">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/log.png" alt="logo" class="brand-logo" />
+          </a>
+
+          <button
+            class="navbar-toggler aviation-toggler"
+            type="button"
+            id="menuToggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#aviationNav"
+          >
+            <span class="toggle-line top-line"></span>
+            <span class="toggle-line middle-line"></span>
+            <span class="toggle-line bottom-line"></span>
+          </button>
+
+          <!-- NAV LINKS -->
+          <div class="collapse navbar-collapse" id="aviationNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="our-services.html"> Our Services </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="aircraft-fleet.html"
+                  >Aircraft Fleet</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- RIGHT ICONS -->
+            <div class="nav-icons d-flex align-items-center">
+              <!-- SEARCH ICON -->
+              <a href="#" class="icon-box">
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.7507 25.6667C21.2275 25.6667 25.6673 21.2268 25.6673 15.75C25.6673 10.2732 21.2275 5.83333 15.7507 5.83333C10.2738 5.83333 5.83398 10.2732 5.83398 15.75C5.83398 21.2268 10.2738 25.6667 15.7507 25.6667Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M32.6673 32.6667L23.334 23.3333"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <!-- USER ICON -->
+              <a href="#" class="icon-box">
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.1673 30.625V27.7083C29.1673 26.1612 28.5527 24.6775 27.4588 23.5835C26.3648 22.4896 24.8811 21.875 23.334 21.875H11.6673C10.1202 21.875 8.63649 22.4896 7.54253 23.5835C6.44857 24.6775 5.83398 26.1612 5.83398 27.7083V30.625"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.4993 16.0417C20.721 16.0417 23.3327 13.43 23.3327 10.2083C23.3327 6.98667 20.721 4.375 17.4993 4.375C14.2777 4.375 11.666 6.98667 11.666 10.2083C11.666 13.43 14.2777 16.0417 17.4993 16.0417Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HEADING -->
+      <div class="container">
+        <div class="fleet-heading text-center">
+          <h1>
+            Your Private Jet Fleet.
+            <span>Simple.</span>
+          </h1>
+
+          <p>
+            Lorem Ipsum Dolor Sit Amet Consectetur. Tellus Nulla Suspendisse Est
+            Odio Orci Convallis Nibh Vitae Venenatis. Lorem Nisl Dui Convallis
+            Praesent.
+          </p>
+
+          <small>
+            Search For Your Aircraft By Manufacturer Or Try The Quick View
+          </small>
+        </div>
+
+        <!-- CARD 1 -->
+        <div class="fleet-card">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="fleet-content">
+                <h3>Bombardier</h3>
+
+                <p>
+                  Bombardier aircraft fly up to 7,700nm with a flight time of up
+                  to 17 hours non-stop, offering seamless and time-efficient
+                  travel. With purpose-built cabin space, these aircraft are
+                  designed for ultimate comfort and productivity in-flight.
+                  Bombardier manufactures two leading aircraft families –
+                  Challenger and Global, both come with facilities .
+                </p>
+
+                <a href="#" class="fleet-btn">
+                  Discover Bombardier Jets
+                  <img src=".//assets/book-fly.png" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="fleet-image">
+                <img src="./assets/private-jet2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="fleet-card reverse-card">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="fleet-image">
+                <img src="./assets/private-jet3.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="fleet-content text-end">
+                <h3>GulfStream</h3>
+
+                <p>
+                  Aircraft manufactured by Gulfstream can fly up to 4,300nm with
+                  a flight time of around 9 hours. The iconic Gulfstream
+                  business jets allow passengers to stay connected in-flight
+                  whether for business or relaxation, and arrive at destination
+                  feeling refreshed due to ultra-low cabin altitude. Aircraft
+                  accommodate up to 16 passeng
+                </p>
+
+                <a href="#" class="fleet-btn">
+                  Discover Gulfstream Jets
+                  <img src="/assets/book-fly.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="fleet-card">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="fleet-content">
+                <h3>Embraer</h3>
+
+                <p>
+                  Aircraft manufactured by Embraer can fly up to 4,600nm with a
+                  flight time of around 8 hours. These Embraer business jets
+                  offer outstanding versatility and wide cabin space for up to
+                  18 passengers seated or 7 sleeping. Aircraft include the
+                  Lineage 1000E, Legacy 650/650E and Praetor 600.
+                </p>
+
+                <a href="#" class="fleet-btn">
+                  Discover Embraer Jets
+                  <img src="./assets/book-fly.png" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="fleet-image">
+                <img src="./assets/private-jet5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="fleet-card reverse-card">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="fleet-image">
+                <img src="./assets/fleet2.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="fleet-content text-end">
+                <h3>Cessna</h3>
+
+                <p>
+                  Cessna aircraft can fly up to 4,360nm with a flight time of
+                  around 5 hours. These light jets provide stellar runway
+                  performance with comfortable cabins, which include the
+                  Citation X, Citation XL and Citation XLS/XLS+ aircraft. Cessna
+                  aircraft accommodate up to 7 passengers seated
+                </p>
+
+                <a href="#" class="fleet-btn">
+                  Discover Cessna Jets
+                  <img src="./assets/book-fly.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="fleet-card">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="fleet-content">
+                <h3>Dassault</h3>
+
+                <p>
+                  Dassault aircraft can fly up to 5,950nm with a flight time of
+                  around 11 hours. Currently offered is the Falcon 7X, an
+                  aerodynamic and uniquely elegant aircraft with unrivaled
+                  performance, particularly on short runway airports. The
+                  aircraft features an advanced cabin pressure system with three
+                  ample separate living spaces .
+                </p>
+
+                <a href="#" class="fleet-btn">
+                  Discover Dassault Jets
+                  <img src="./assets/book-fly.png" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="fleet-image">
+                <img src="./assets/private-jet1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP LINE DESIGN -->
+    <div class="faq-top-line">
+      <img src="./assets/top-end.png" alt="design" class="top-line-design" />
+    </div>
+
+    <!-- FAQ SECTION -->
+
+    <section class="faq-section">
+      <div class="faq-box">
+        <div class="faq-heading-design">
+          <img src="./assets/design.png" alt="design" />
+        </div>
+
+        <button class="faq-tag">Common Question</button>
+
+        <h2>
+          Common Questions About
+          <span>Royal Aviation</span>
+        </h2>
+
+        <div class="accordion custom-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                What types of aircraft does VistaJet offer access to?
+              </button>
+            </h2>
+
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We provide access to luxury private aircraft worldwide.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Is the FlowCash course 100% online?
+              </button>
+            </h2>
+
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, it is completely online and flexible.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                Does the investment method presented at the club really work?
+              </button>
+            </h2>
+
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, the strategies are designed by professionals.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+              >
+                Does the investment method presented at the club really work?
+              </button>
+            </h2>
+
+            <div
+              id="faq4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, it is tested and trusted globally.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+              >
+                Does the investment method presented at the club really work?
+              </button>
+            </h2>
+
+            <div
+              id="faq5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Absolutely. It is built for long-term success.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+
+    <footer class="aviation-footer">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- LEFT -->
+          <div class="col-lg-4">
+            <div class="footer-logo">
+              <img src="./assets/log.png" alt="logo" />
+            </div>
+
+            <p class="footer-text">
+              Royal Aviation, A Trusted Choice For Those Valuing Time, Service,
+              And Reliability Explore Unique Features To Customize Your Private
+              Flying Experience Your Way
+            </p>
+
+            <a href="tel:+911140689002" class="footer-phone">
+              <i class="fa-solid fa-phone"></i>
+              IN +91-11-40689002
+            </a>
+          </div>
+
+          <!-- CENTER -->
+          <div class="col-lg-4">
+            <div class="footer-links-wrapper">
+              <ul class="footer-links">
+                <li><a href="#">Our Product</a></li>
+                <li><a href="#">Our Service</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Our Fleet</a></li>
+                <li><a href="#">Airports</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">E-Book</a></li>
+              </ul>
+
+              <ul class="footer-links">
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">News & Media</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-lg-4">
+            <h4 class="footer-update-title">Get The Latest Update</h4>
+
+            <!-- SUBSCRIBE -->
+            <form class="footer-form">
+              <input type="email" placeholder="Enter Your Email" />
+
+              <button type="submit">Subscribe</button>
+            </form>
+
+            <!-- SOCIAL -->
+            <div class="footer-social">
+              <a href="#">
+                <img src="./assets/twitter.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="./assets/intagram.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="./assets/facebook.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="./assets/YouTube-Studio.png" alt="" />
+              </a>
+            </div>
+
+            <!-- LOCATION -->
+            <p class="footer-location">Delhi | Mumbai | Bengaluru | Dubai</p>
+          </div>
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+          <p>
+            © 2014-2024 All Right Reserved By Royal Aviation Services Private
+            Limited
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
