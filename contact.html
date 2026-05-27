@@ -191,9 +191,9 @@
 
             <div class="col-lg-5">
               <div class="aviation-input-box">
-                <label>Fast Name</label>
+                <label>First Name</label>
 
-                <input type="text" />
+                <input type="text" required />
               </div>
             </div>
 
@@ -201,7 +201,7 @@
               <div class="aviation-input-box">
                 <label>Last Name</label>
 
-                <input type="text" />
+                <input type="text" required />
               </div>
             </div>
           </div>
@@ -213,15 +213,14 @@
               <div class="aviation-input-box">
                 <label>Phone Number</label>
 
-                <input type="text" />
+                <input type="tel" required />
               </div>
             </div>
 
             <div class="col-lg-6">
               <div class="aviation-input-box">
                 <label>Email</label>
-
-                <input type="email" />
+                <input type="email" required />
               </div>
             </div>
           </div>
@@ -254,8 +253,7 @@
 
           <div class="aviation-input-box aviation-message-box">
             <label>Message</label>
-
-            <textarea></textarea>
+            <textarea required></textarea>
           </div>
 
           <!-- CHECKBOX -->
@@ -280,27 +278,21 @@
             </div>
           </div>
 
-          <!-- BUTTON -->
-
-          <button type="submit" class="aviation-submit-btn">
-            Submit
-
-            <img src="./assets/book-fly.png" alt="arrow" />
-          </button>
+          <input type="submit" value="Submit" class="aviation-submit-btn" />
         </form>
       </div>
     </section>
 
-     <!--FOOTER SECTION-->
+    <!--FOOTER SECTION-->
 
     <footer class="aviation-footer">
       <div class="container">
         <div class="row gy-5">
           <!-- LEFT -->
           <div class="col-lg-4">
-            <div class="footer-logo">
+            <a href="index.html" class="footer-logo">
               <img src="./assets/log.png" alt="logo" />
-            </div>
+            </a>
 
             <p class="footer-text">
               Royal Aviation, A Trusted Choice For Those Valuing Time, Service,
@@ -341,33 +333,40 @@
 
           <!-- RIGHT -->
           <div class="col-lg-4">
-            <h4 class="footer-update-title">Get The Latest Update</h4>
-
+            <p class="footer-update-title">Get The Latest Update</p>
             <!-- SUBSCRIBE -->
             <form class="footer-form">
               <input type="email" placeholder="Enter Your Email" />
 
-              <button type="submit">Subscribe</button>
+              <input type="submit" value="Subscribe" />
             </form>
 
             <!-- SOCIAL -->
-            <div class="footer-social">
-              <a href="#">
-                <img src="./assets/twitter.png" alt="" />
-              </a>
+            <ul class="footer-social">
+              <li>
+                <a href="#">
+                  <img src="./assets/twitter.png" alt="" />
+                </a>
+              </li>
 
-              <a href="#">
-                <img src="./assets/intagram.png" alt="" />
-              </a>
+              <li>
+                <a href="#">
+                  <img src="./assets/intagram.png" alt="" />
+                </a>
+              </li>
 
-              <a href="#">
-                <img src="./assets/facebook.png" alt="" />
-              </a>
+              <li>
+                <a href="#">
+                  <img src="./assets/facebook.png" alt="" />
+                </a>
+              </li>
 
-              <a href="#">
-                <img src="./assets/YouTube-Studio.png" alt="" />
-              </a>
-            </div>
+              <li>
+                <a href="#">
+                  <img src="./assets/YouTube-Studio.png" alt="" />
+                </a>
+              </li>
+            </ul>
 
             <!-- LOCATION -->
             <p class="footer-location">Delhi | Mumbai | Bengaluru | Dubai</p>
@@ -377,8 +376,9 @@
         <!-- BOTTOM -->
         <div class="footer-bottom">
           <p>
-            © 2014-2024 All Right Reserved By Royal Aviation Services Private
-            Limited
+            © 2014-2024 All Right Reserved By
+
+            <a href="index.html"> Royal Aviation Services Private Limited </a>
           </p>
         </div>
       </div>

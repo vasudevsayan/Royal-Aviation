@@ -390,7 +390,6 @@
   .table-row {
     min-width: 750px;
   }
-
 }
 
 @media (max-width: 575px) {
@@ -420,10 +419,6 @@
     font-size: 13px;
 
     line-height: 24px;
-  }
-
-  .alternative-btn {
-    width: 100%;
   }
 
   .alternative-image img {

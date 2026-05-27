@@ -2,7 +2,7 @@
    CONTACT PAGE
 ========================= */
 
-body{
+body {
   background: #000;
 }
 
@@ -10,26 +10,26 @@ body{
    CONTACT HEADER SECTION
 ========================= */
 
-.aviation-contact-section{
+.aviation-contact-section {
   padding: 60px 0 40px;
   position: relative;
 }
 
 .aviation-contact-section,
-.aviation-form-section{
+.aviation-form-section {
   background: #000;
 }
-.aviation-contact-section .container{
+.aviation-contact-section .container {
   position: relative;
   z-index: 2;
 }
 
-.aviation-contact-header{
+.aviation-contact-header {
   max-width: 1160px;
   margin: 0 auto;
 }
 
-.aviation-contact-header h1{
+.aviation-contact-header h1 {
   font-family: "Arlita";
   font-size: 78px;
   line-height: 1.05;
@@ -38,18 +38,18 @@ body{
   margin-bottom: 46px;
 }
 
-.aviation-contact-header h1 span{
+.aviation-contact-header h1 span {
   color: #d4b15a;
 }
 
-.aviation-contact-info{
+.aviation-contact-info {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 140px;
 }
 
-.contact-info-box h5{
+.contact-info-box h5 {
   color: #ffffff;
   font-size: 30px;
   letter-spacing: 5px;
@@ -57,14 +57,14 @@ body{
   font-weight: 300;
 }
 
-.contact-info-box a{
+.contact-info-box a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s ease;
 }
 
-.contact-info-box a:hover{
+.contact-info-box a:hover {
   color: #d4b15a;
 }
 
@@ -72,31 +72,31 @@ body{
    CONTACT FORM SECTION
 ========================= */
 
-.aviation-form-section{
+.aviation-form-section {
   padding: 20px 0 120px;
   position: relative;
 }
 
 .aviation-contact-section,
-.aviation-form-section{
+.aviation-form-section {
   background: #000;
 }
 
-.aviation-form-section .container{
+.aviation-form-section .container {
   position: relative;
   z-index: 2;
 }
 
-.aviation-contact-form{
+.aviation-contact-form {
   max-width: 1520px;
   margin: 0 auto;
 }
 
-.aviation-contact-form .row{
+.aviation-contact-form .row {
   margin-bottom: 34px;
 }
 
-.aviation-input-box label{
+.aviation-input-box label {
   display: block;
   color: #ffffff;
   font-size: 18px;
@@ -104,158 +104,151 @@ body{
 }
 
 .aviation-input-box input,
-.aviation-input-box select{
+.aviation-input-box select {
   width: 100%;
   height: 64px;
   border-radius: 40px;
-  border: 1px solid rgba(219,199,97,0.35);
+  border: 1px solid rgba(219, 199, 97, 0.35);
   background: #181817;
-  padding: 0 24px;
+  padding: 16px 24px;
   color: #ffffff;
   outline: none;
 }
 
-.aviation-input-box textarea{
+.aviation-input-box textarea {
   width: 100%;
   height: 414px;
   border-radius: 40px;
-  border: 1px solid rgba(219,199,97,0.35);
+  border: 1px solid rgba(219, 199, 97, 0.35);
   background: #181817;
   padding: 28px;
   color: #ffffff;
+  font-family: inherit;
   resize: none;
   outline: none;
 }
 
-.aviation-message-box{
+.aviation-message-box {
   margin-top: 10px;
 }
 
-.aviation-check-wrapper{
+.aviation-check-wrapper {
   margin-top: 38px;
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
 
-.aviation-check-box{
+.aviation-check-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
 }
 
-.aviation-check-box input{
+.aviation-check-box input {
   width: 22px;
   height: 22px;
   appearance: none;
-  border: 1px solid rgba(219,199,97,0.35);
+  border: 1px solid rgba(219, 199, 97, 0.35);
   background: transparent;
   cursor: pointer;
 }
 
-.aviation-check-box input:checked{
+.aviation-check-box input:checked {
   background: #d4b15a;
 }
 
-.aviation-check-box label{
+.aviation-check-box label {
   color: #ffffff;
   font-size: 17px;
   line-height: 1.7;
   cursor: pointer;
 }
 
-.aviation-submit-btn{
-  width: 145px;
+.aviation-submit-btn {
+  width: fit-content;
+  min-width: 145px;
   height: 54px;
+  padding: 0 32px;
   border-radius: 50px;
-  border: 1px solid rgba(219,199,97,0.5);
+  border: 1px solid rgba(219, 199, 97, 0.5);
   background: transparent;
-  color: #ffffff;
+  color: #fff;
   margin-top: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
-.aviation-submit-btn img{
-  width: 18px;
-}
-
-.aviation-submit-btn:hover{
+.aviation-submit-btn:hover {
   background: #d4b15a;
   color: #000;
 }
-
 
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 991px){
-
-  .aviation-contact-header h1{
+@media (max-width: 991px) {
+  .aviation-contact-header h1 {
     font-size: 58px;
   }
 
-  .aviation-contact-info{
+  .aviation-contact-info {
     gap: 60px;
   }
 
-  .aviation-input-box{
+  .aviation-input-box {
     margin-bottom: 20px;
   }
 
-  .aviation-input-box textarea{
+  .aviation-input-box textarea {
     height: 260px;
   }
 }
 
-@media (max-width: 767px){
-
-    .aviation-contact-section{
-      padding-top: 30px;
+@media (max-width: 767px) {
+  .aviation-contact-section {
+    padding-top: 30px;
   }
 
-  .aviation-contact-header h1{
+  .aviation-contact-header h1 {
     font-size: 42px;
     line-height: 1.2;
   }
 
-  .aviation-contact-info{
+  .aviation-contact-info {
     flex-direction: column;
     gap: 35px;
   }
 
-  .contact-info-box h5{
+  .contact-info-box h5 {
     font-size: 20px;
     letter-spacing: 3px;
   }
 
-  .aviation-form-section{
+  .aviation-form-section {
     padding: 20px 0 80px;
   }
 
-  .aviation-input-box label{
+  .aviation-input-box label {
     font-size: 15px;
   }
 
   .aviation-input-box input,
-  .aviation-input-box select{
+  .aviation-input-box select {
     height: 56px;
   }
 
-  .aviation-input-box textarea{
+  .aviation-input-box textarea {
     height: 220px;
     border-radius: 28px;
   }
 
-  .aviation-check-box{
+  .aviation-check-box {
     align-items: flex-start;
   }
 
-  .aviation-check-box label{
+  .aviation-check-box label {
     font-size: 15px;
     line-height: 1.6;
   }
